@@ -12,6 +12,21 @@
     --poppins: 'Poppins',
         sans-serif;
 }
+body {
+    font-size: 14px;
+    font-family: var(--poppins);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
 
 i {
     display: inline;
@@ -162,8 +177,147 @@ a:focus {
     margin-left: 10px;
 }
 
+/* banner area css goes here */
+.banner_section {
+    background: linear-gradient(rgba(110, 110, 110, 0.5), rgba(110, 110, 110, 0.5)), url(../images/pexels-diego-pontes-2897128.png);
 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+    padding-bottom: 20px;
 
+}
+
+.banner_section h1 {
+    font-size: 80px;
+    text-transform: capitalize;
+    font-family: var(--Playfair);
+    font-weight: 600;
+    color: var(--white);
+    padding-bottom: 15px;
+    margin: 0;
+}
+
+.banner_section span,
+.banner_section span a {
+    font-size: 29px;
+    font-weight: 300;
+    color: rgb(248, 248, 248);
+}
+
+/* Features Section css goes here  */
+.features_section {
+    padding-top: 70px;
+}
+
+.features_section .fs-img1 {
+    overflow: hidden;
+    position: relative;
+}
+
+.features_section .writer_name {
+    position: absolute;
+    top: 38px;
+    left: 0;
+    background: var(--primaryColor);
+    padding: 10px 40px;
+    font-size: 20px;
+}
+
+.features_section .writer_text {
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.524);
+    padding: 20px 50px;
+    font-size: 14px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    visibility: hidden;
+    transition: .5s linear;
+    -webkit-transition: .5s linear;
+    -moz-transition: .5s linear;
+    -ms-transition: .5s linear;
+    -o-transition: .5s linear;
+}
+
+.features_section .fs-img1:hover .writer_text {
+    visibility: visible;
+    bottom: 0;
+}
+
+.features_section .writer_name p {
+    color: rgba(0, 0, 0, 1);
+}
+
+.features_section .writer_text p {
+    color: #fff;
+}
+
+.features_section .writer_text i {
+    color: #fff;
+    position: absolute;
+    right: 21px;
+    bottom: 36px;
+    font-size: 22px;
+}
+
+.features_section .meadia_followers span {
+    width: 65px;
+    height: 65px;
+    background: var(--primaryColor);
+    color: #fff;
+    display: block;
+    line-height: 65px;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-bottom: 10px;
+    box-shadow: -2px 6px 21px 4px #00000036;
+}
+
+.features_section .meadia_followers p {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.features_section .fs_btn {
+    margin-top: 45px;
+    margin-bottom: 74px;
+}
+
+.features_section .fs_btn a {
+    padding: 20px 70px;
+    background: var(--primaryColor);
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    transition: 0.3s linear;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -ms-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+}
+
+.features_section .fs_btn a:hover {
+    box-shadow: -2px 6px 21px 4px #00000036;
+}
+
+.features_section .fs_btn a:first-child {
+    margin-right: 20px;
+}
+
+.features_section .fs_btn a:last-child {
+    margin-left: 20px;
+}
 /* footer section goes here */
 #footer_section {
     background: #B2E8E8;
@@ -177,9 +331,6 @@ a:focus {
     font-family: var(--jost_font);
     font-weight: 300;
 }
-
-#footer_section .social_icon {}
-
 #footer_section .social_icon i {
     width: 50px;
     height: 50px;
@@ -209,17 +360,6 @@ a:focus {
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
 }
-
-
-
-
-
-
-
-
-
-
-
 /* font-family: 'Jost',
     sans-serif;
 
