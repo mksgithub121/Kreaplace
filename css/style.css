@@ -1,0 +1,230 @@
+/* font family */
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap');
+
+/* common css goes here */
+:root {
+    --primaryColor: #E8B2B2;
+    --white: #fff;
+    --jost_font: 'Jost',
+        sans-serif;
+    --Playfair: 'Playfair Display',
+        serif;
+    --poppins: 'Poppins',
+        sans-serif;
+}
+
+i {
+    display: inline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+input:focus,
+button:focus,
+a:focus {
+    outline: none;
+    box-shadow: 0;
+}
+
+/* =============  preloader css start here ===============  */
+.preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: #0c0c0c;
+    position: fixed;
+    z-index: 999999;
+}
+
+.preloader.complete {
+    display: none;
+}
+
+/* =============== preloader css end here =============== */
+
+/* header section  css goes here */
+#header_section {
+    background: var(--primaryColor)
+}
+
+.navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    justify-content: space-around;
+}
+
+#header_section .nav-link {
+    margin-right: 10px;
+    text-transform: capitalize;
+    color: var(--white);
+    font-size: 16px;
+    font-family: var(--jost_font);
+    font-weight: 700;
+    transition: .3s linear;
+    -webkit-transition: .3s linear;
+    -moz-transition: .3s linear;
+    -ms-transition: .3s linear;
+    -o-transition: .3s linear;
+}
+
+#header_section .nav-link:hover {
+    color: #B2E8E8;
+}
+
+#header_section .search {
+    border: 1px solid #fff;
+    border-radius: 30px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+
+}
+
+#header_section .search input {
+    border: 0;
+    background: transparent;
+    width: 100%;
+    padding-left: 10px;
+    color: rgb(111, 111, 111);
+    font-weight: 400;
+    border-right: 1px solid rgb(165, 165, 165);
+}
+
+#header_section i {
+    transition: .3s linear;
+    -webkit-transition: .3s linear;
+    -moz-transition: .3s linear;
+    -ms-transition: .3s linear;
+    -o-transition: .3s linear;
+}
+
+#header_section i:hover,
+#header_section .search i:hover {
+    color: #B2E8E8;
+}
+
+#header_section .search i {
+    padding: 0px 10px;
+    color: #fff;
+    display: inline-block;
+}
+
+.header_icon {
+    margin-top: 6px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.header_icon i {
+    font-size: 22px;
+    color: #fff;
+}
+
+.header_icon span {
+    display: inline-block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #8ef9f9;
+    top: 0px;
+    right: -7px;
+    font-size: 12px;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 15px;
+    color: #808080;
+}
+
+#header_section .icon_left {
+    margin-left: 25px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+}
+
+#header_section .icon_left i {
+    font-size: 14px;
+}
+
+#header_section .user_img {
+    padding: 10px;
+}
+
+#header_section .user_img img {
+    margin-left: 10px;
+}
+
+
+
+/* footer section goes here */
+#footer_section {
+    background: #B2E8E8;
+}
+
+#footer_section .copyright p {
+    padding: 83px 0px;
+    margin: 0;
+    color: rgba(29, 29, 29, 1);
+    font-size: 18px;
+    font-family: var(--jost_font);
+    font-weight: 300;
+}
+
+#footer_section .social_icon {}
+
+#footer_section .social_icon i {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    font-size: 31px;
+    background: rgba(232, 178, 178, 1);
+    color: var(--white);
+    margin-left: 10px;
+    box-shadow: -2px 6px 21px 4px #00000036;
+    transition: .3s linear;
+    -webkit-transition: .3s linear;
+    -moz-transition: .3s linear;
+    -ms-transition: .3s linear;
+    -o-transition: .3s linear;
+}
+
+#footer_section .social_icon i:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* font-family: 'Jost',
+    sans-serif;
+
+    font-family: 'Playfair Display',
+    serif;
+
+    font-family: 'Poppins',
+    sans-serif; */
