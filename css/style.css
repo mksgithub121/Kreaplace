@@ -427,6 +427,11 @@ a:focus {
     background: transparent;
     border: none;
     cursor: pointer;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
 }
 
 .project_section .project_nav-2 button.active {
@@ -478,10 +483,10 @@ a:focus {
     position: relative;
     width: 33.33%;
     padding: 15px;
-    }
+}
 
-    .project_single_img {
-        position: relative;
+.project_single_img {
+    position: relative;
 }
 
 .project_section .project_item .overlay_icon {

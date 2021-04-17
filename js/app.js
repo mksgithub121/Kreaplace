@@ -5,9 +5,6 @@ $(function () {
             $(".preloader").addClass("complete");
         });
         // preloader code end here 
-
-        //   scroll animation aos plugin code start here
-        AOS.init();
         //  scroll animation aos plugin code end here  
 
         // Sticky menu js code start here 
@@ -58,6 +55,15 @@ $(function () {
         // Back To Top button end here
 
      */
+    // mixitup for project section
+    $('.banner_mixitup').mixItUp({});
+    // Counter
+    $('.spring').counterUp({
+        delay: 15,
+        time: 2000
+    });
+    //   scroll animation aos plugin code start here
+    AOS.init();
     //  scroll down to hide navbar  and scroll top to show navbar
     $(window).on("scroll", function () {
         var scrollAmount = $(window).scrollTop();
@@ -85,11 +91,12 @@ $(function () {
     $(".mobile_menu").click(function () {
         $("#header_section").toggleClass("mobileActive");
     });
+    $("#header_section .search i").click(function () {
+        $("#header_section .search").toggleClass("active");
+    });
     // slick slider for banner
     $('.banner_slider').slick({
         autoplay: true,
         arrows: false,
     });
-    // mixitup for project section
-    $('.banner_mixitup').mixItUp({});
 });
