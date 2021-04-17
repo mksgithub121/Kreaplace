@@ -292,11 +292,8 @@ a:focus {
     background: rgba(0, 0, 0, 0.524);
     padding: 20px 50px;
     font-size: 14px;
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
     visibility: hidden;
     transition: .5s linear;
     -webkit-transition: .5s linear;
@@ -474,11 +471,17 @@ a:focus {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin: 0px -15px;
 }
 
 .project_section .project_item {
     position: relative;
     width: 33.33%;
+    padding: 15px;
+    }
+
+    .project_single_img {
+        position: relative;
 }
 
 .project_section .project_item .overlay_icon {
