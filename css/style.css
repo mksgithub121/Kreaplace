@@ -73,6 +73,14 @@ a:focus {
 }
 
 /* =============== preloader css end here =============== */
+/* mobile nav */
+.navbar-toggler-icon {
+    height: 3px;
+    width: 25px;
+    background: rgb(255, 255, 255);
+    display: block;
+    margin-bottom: 4px;
+}
 
 /* header section  css goes here */
 #header_section {
@@ -82,30 +90,30 @@ a:focus {
     -moz-transition: 0.5s linear;
     -ms-transition: 0.5s linear;
     -o-transition: 0.5s linear;
+}
+
+#header_section.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+    transition: 0.5s linear;
+    -webkit-transition: 0.5s linear;
+    -moz-transition: 0.5s linear;
+    -ms-transition: 0.5s linear;
+    -o-transition: 0.5s linear;
+    -webkit-animation: stickyanim .5s;
+}
+
+@keyframes stickyanim {
+    0% {
+        top: -30px;
     }
 
-    #header_section.sticky {
-        position: fixed;
+    100% {
         top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 99999;
-        transition: 0.5s linear;
-        -webkit-transition: 0.5s linear;
-        -moz-transition: 0.5s linear;
-        -ms-transition: 0.5s linear;
-        -o-transition: 0.5s linear;
-        -webkit-animation: stickyanim .5s;
     }
-
-    @keyframes stickyanim {
-        0% {
-            top: -30px;
-        }
-
-        100% {
-            top: 0;
-        }
 }
 
 .navbar-expand-lg .navbar-collapse {
@@ -113,6 +121,13 @@ a:focus {
     justify-content: space-around;
 }
 
+#header_section .menu {
+    list-style-type: none;
+    display: flex;
+
+}
+
+#header_section .menu li {}
 #header_section .nav-link {
     margin-right: 10px;
     text-transform: capitalize;
@@ -266,6 +281,8 @@ a:focus {
     background: var(--primaryColor);
     padding: 10px 40px;
     font-size: 20px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 .features_section .writer_text {
@@ -399,23 +416,23 @@ a:focus {
     padding: 20px 0px;
 }
 
-.project_section .project_nav-2 ul {
-    list-style: none;
+.project_section .project_nav-2 {
     display: flex;
     justify-content: center;
 }
 
-.project_section .project_nav-2 ul li {}
-
-.project_section .project_nav-2 ul li a {
+.project_section .project_nav-2 button {
     font-size: 22px;
     text-transform: capitalize;
     margin-right: 30px;
     padding: 10px 30px;
     color: #0c0c0c;
+    background: transparent;
+    border: none;
+    cursor: pointer;
 }
 
-.project_section .project_nav-2 ul li a.active {
+.project_section .project_nav-2 button.active {
     color: var(--primaryColor);
     border-bottom: 3px solid var(--primaryColor);
 }
@@ -441,6 +458,7 @@ a:focus {
     top: 50px;
     left: 0;
     display: none;
+    z-index: 999;
 }
 
 .project_section .project_dropdown ul li {
@@ -455,11 +473,12 @@ a:focus {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .project_section .project_item {
     position: relative;
-    margin: 20px;
+    width: 33.33%;
 }
 
 .project_section .project_item .overlay_icon {

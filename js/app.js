@@ -58,15 +58,15 @@ $(function () {
         // Back To Top button end here
 
      */
-     //  scroll down to hide navbar  and scroll top to show navbar
-     $(window).on("scroll", function () {
-         var scrollAmount = $(window).scrollTop();
-         if (scrollAmount > 50) {
-             $("#header_section").addClass("sticky");
-         } else {
-             $("#header_section").removeClass("sticky");
-         }
-     });
+    //  scroll down to hide navbar  and scroll top to show navbar
+    $(window).on("scroll", function () {
+        var scrollAmount = $(window).scrollTop();
+        if (scrollAmount > 50) {
+            $("#header_section").addClass("sticky");
+        } else {
+            $("#header_section").removeClass("sticky");
+        }
+    });
     //  Smooth section scroll code start here  
     $("#header_section  ul li a").on('click', function (e) {
         e.preventDefault();
@@ -78,12 +78,18 @@ $(function () {
             // window.location.hash = target;
         });
     });
-    // slick slider for banner
     $(".project_section .project_dropdown span ").on("click", function () {
         $(".project_section .project_dropdown ul").slideToggle();
     });
+    //mobile menu
+    $(".mobile_menu").click(function () {
+        $("#header_section").toggleClass("mobileActive");
+    });
+    // slick slider for banner
     $('.banner_slider').slick({
         autoplay: true,
         arrows: false,
     });
+    // mixitup for project section
+    $('.banner_mixitup').mixItUp({});
 });

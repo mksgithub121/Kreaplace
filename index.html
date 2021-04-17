@@ -17,6 +17,7 @@
 
         <!-- custom css  -->
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
     </head>
 
     <body data-spy="scroll" data-target=".navbar" data-offset="100">
@@ -24,36 +25,41 @@
         <header id="header_section">
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="row">
-                        <div class="col-lg-2">
+                    <div class="row w-100">
+                        <div class="col-lg-2 col-4  order-lg-1  order-2  order-sm-2">
                             <a class="navbar-brand" href="#"><img src="images/Kreaplace_bl1_e.png"
                                     class="w-100 img-fluid" alt="Logo"></a>
                         </div>
-                        <div class="col-lg-5 align-self-center">
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="index.html">Forum</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#features_section">Marketplace</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#project_section">Recipes</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#footer_section">Contact</a>
-                                    </li>
-                                </ul>
+                        <div class="col-lg-5  col-4 order-lg-2  order-1  order-sm-1 align-self-center">
+                            <div class="nav_wrapper">
+                                <button class="navbar-toggler mobile_menu" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                    <span class="navbar-toggler-icon"></span>
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="index.html">Forum</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#features_section">Marketplace</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#project_section">Recipes</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#footer_section">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-5 w-100">
-                            <form class="d-flex align-items-center justify-content-flex-end">
+                        <div
+                            class="col-lg-5 col-4 order-lg-3  order-3 order-sm-3 w-100 align-self-center justify-self-end">
+                            <form class="d-flex align-items-center justify-content-end">
                                 <div class="icon d-flex">
                                     <div class="search">
                                         <input type="search">
@@ -102,7 +108,7 @@
         <section id="features_section" class="features_section">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6">
                         <div class="fs-img1">
                             <img src="images/rectangle-12.png" alt="Features img" class="w-100 img-fluid">
                             <div class="writer_name">
@@ -116,7 +122,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6">
                         <div class="social_details">
                             <div class="meadia_followers d-flex text-center justify-content-around">
                                 <div class="item">
@@ -143,10 +149,10 @@
                         </div>
                         <div class="social_img mt-5">
                             <div class="row">
-                                <div class="col-lg-6">
+                                <div class="col-lg-6 col-sm-6">
                                     <img src="images/rectangle-13.png" alt="Features photo" class="w-100 img-fluid">
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-6  col-sm-6">
                                     <img src="images/rectangle-13_dw.png" alt="Features Photo" class="w-100 img-fluid">
                                 </div>
                             </div>
@@ -166,27 +172,22 @@
                 <a href="#" class="active"> Recipes </a>
                 <a href="#"> Posts </a>
             </div>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12 m-auto p-0">
-                        <div class="project_nav-2 text-center">
-                            <ul>
-                                <li><a href="# " class="active">Women</a></li>
-                                <li><a href="#">Kids</a></li>
-                                <li><a href="#">Men</a></li>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Other</a></li>
-                            </ul>
-                        </div>
-                        <div class="project_dropdown">
-                            <span>Trending <i class="fa fa-chevron-down" aria-hidden="true"></i></span>
-                            <ul>
-                                <li><a href="#">New</a></li>
-                                <li><a href="#">Free</a></li>
-                                <li><a href="#">Top Rated</a></li>
-                            </ul>
-                        </div>
-                    </div>
+            <div class="container-fluid position-relative">
+                <div class="project_nav-2 text-center">
+                    <button class="filter active" data-filter=".women">Women</button>
+                    <button class="filter" data-filter=".kids">Kids</button>
+                    <button class="filter" data-filter=".man">Men</button>
+                    <button class="filter" data-filter=".home">Home</button>
+                    <button class="filter" data-filter=".others">Other</button>
+                    </ul>
+                </div>
+                <div class="project_dropdown">
+                    <span>Trending <i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+                    <ul>
+                        <li><a href="#">New</a></li>
+                        <li><a href="#">Free</a></li>
+                        <li><a href="#">Top Rated</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="container">
@@ -202,15 +203,14 @@
                                     <i class="flaticon-bookmark"></i>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="overlay-text">
-                            <h3> Musse Nusseklud </h3>
-                            <span> @_knitteriAm </span>
-                            <p>15DKR</p>
+                            <div class="overlay-text">
+                                <h3> Musse Nusseklud </h3>
+                                <span> @_knitteriAm </span>
+                                <p>15DKR</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="project_item">
+                    <div class="project_item  ">
                         <div class="project_single_img">
                             <img src="images/Rectangle_2_ea.png" alt="Project-images" class="w-100 img-fluid">
                             <div class="overlay_icon">
@@ -221,14 +221,14 @@
                                     <i class="flaticon-bookmark"></i>
                                 </div>
                             </div>
-                        </div>
-                        <div class="overlay-text">
-                            <h3> Musse Nusseklud </h3>
-                            <span> @_knitteriAm </span>
-                            <p>15DKR</p>
+                            <div class="overlay-text">
+                                <h3> Musse Nusseklud </h3>
+                                <span> @_knitteriAm </span>
+                                <p>15DKR</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="project_item">
+                    <div class="project_item ">
                         <div class="project_single_img">
                             <img src="images/Rectangle_2_g.png" alt="Project-images" class="w-100 img-fluid">
                             <div class="overlay_icon">
@@ -239,16 +239,14 @@
                                     <i class="flaticon-bookmark"></i>
                                 </div>
                             </div>
-                        </div>
-                        <div class="overlay-text">
-                            <h3> Musse Nusseklud </h3>
-                            <span> @_knitteriAm </span>
-                            <p>15DKR</p>
+                            <div class="overlay-text">
+                                <h3> Musse Nusseklud </h3>
+                                <span> @_knitteriAm </span>
+                                <p>15DKR</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="grp">
-                    <div class="project_item">
+                    <div class="project_item ">
                         <div class="project_single_img">
                             <img src="images/Rectangle_2_gt.png" alt="Project-images" class="w-100 img-fluid">
                             <div class="overlay_icon">
@@ -259,14 +257,14 @@
                                     <i class="flaticon-bookmark"></i>
                                 </div>
                             </div>
-                        </div>
-                        <div class="overlay-text">
-                            <h3> Musse Nusseklud </h3>
-                            <span> @_knitteriAm </span>
-                            <p>15DKR</p>
+                            <div class="overlay-text">
+                                <h3> Musse Nusseklud </h3>
+                                <span> @_knitteriAm </span>
+                                <p>15DKR</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="project_item">
+                    <div class="project_item ">
                         <div class="project_single_img">
                             <img src="images/Rectangle_2_ek.png" alt="Project-images" class="w-100 img-fluid">
                             <div class="overlay_icon">
@@ -277,14 +275,14 @@
                                     <i class="flaticon-bookmark"></i>
                                 </div>
                             </div>
-                        </div>
-                        <div class="overlay-text">
-                            <h3> Musse Nusseklud </h3>
-                            <span> @_knitteriAm </span>
-                            <p>15DKR</p>
+                            <div class="overlay-text">
+                                <h3> Musse Nusseklud </h3>
+                                <span> @_knitteriAm </span>
+                                <p>15DKR</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="project_item">
+                    <div class="project_item ">
                         <div class="project_single_img">
                             <img src="images/Rectangle_2_f.png" alt="Project-images" class="w-100 img-fluid">
                             <div class="overlay_icon">
@@ -295,16 +293,14 @@
                                     <i class="flaticon-bookmark"></i>
                                 </div>
                             </div>
-                        </div>
-                        <div class="overlay-text">
-                            <h3> Musse Nusseklud </h3>
-                            <span> @_knitteriAm </span>
-                            <p>15DKR</p>
+                            <div class="overlay-text">
+                                <h3> Musse Nusseklud </h3>
+                                <span> @_knitteriAm </span>
+                                <p>15DKR</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="grp">
-                    <div class="project_item">
+                    <div class="project_item ">
                         <div class="project_single_img">
                             <img src="images/Rectangle_2_gj.png" alt="Project-images" class="w-100 img-fluid">
                             <div class="overlay_icon">
@@ -315,11 +311,11 @@
                                     <i class="flaticon-bookmark"></i>
                                 </div>
                             </div>
-                        </div>
-                        <div class="overlay-text">
-                            <h3> Musse Nusseklud </h3>
-                            <span> @_knitteriAm </span>
-                            <p>15DKR</p>
+                            <div class="overlay-text">
+                                <h3> Musse Nusseklud </h3>
+                                <span> @_knitteriAm </span>
+                                <p>15DKR</p>
+                            </div>
                         </div>
                     </div>
                     <div class="project_item">
@@ -333,14 +329,14 @@
                                     <i class="flaticon-bookmark"></i>
                                 </div>
                             </div>
-                        </div>
-                        <div class="overlay-text">
-                            <h3> Musse Nusseklud </h3>
-                            <span> @_knitteriAm </span>
-                            <p>15DKR</p>
+                            <div class="overlay-text">
+                                <h3> Musse Nusseklud </h3>
+                                <span> @_knitteriAm </span>
+                                <p>15DKR</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="project_item">
+                    <div class="project_item ">
                         <div class="project_single_img">
                             <img src="images/Rectangle_2_fp.png" alt="Project-images" class="w-100 img-fluid">
                             <div class="overlay_icon">
@@ -351,15 +347,13 @@
                                     <i class="flaticon-bookmark"></i>
                                 </div>
                             </div>
-                        </div>
-                        <div class="overlay-text">
-                            <h3> Musse Nusseklud </h3>
-                            <span> @_knitteriAm </span>
-                            <p>15DKR</p>
+                            <div class="overlay-text">
+                                <h3> Musse Nusseklud </h3>
+                                <span> @_knitteriAm </span>
+                                <p>15DKR</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="grp">
                     <div class="project_item ">
                         <div class="project_single_img">
                             <img src="images/Rectangle_2_fe.png" alt="Project-images" class="w-100 img-fluid">
@@ -371,14 +365,14 @@
                                     <i class="flaticon-bookmark"></i>
                                 </div>
                             </div>
-                        </div>
-                        <div class="overlay-text py-1">
-                            <h3> Musse Nusseklud </h3>
-                            <span> @_knitteriAm </span>
-                            <p>15DKR</p>
+                            <div class="overlay-text py-1">
+                                <h3> Musse Nusseklud </h3>
+                                <span> @_knitteriAm </span>
+                                <p>15DKR</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="project_item">
+                    <div class="project_item ">
                         <div class="project_single_img">
                             <img src="images/Rectangle_2_e.png" alt="Project-images" class="w-100 img-fluid">
                             <div class="overlay_icon">
@@ -389,14 +383,14 @@
                                     <i class="flaticon-bookmark"></i>
                                 </div>
                             </div>
-                        </div>
-                        <div class="overlay-text">
-                            <h3> Musse Nusseklud </h3>
-                            <span> @_knitteriAm </span>
-                            <p>15DKR</p>
+                            <div class="overlay-text">
+                                <h3> Musse Nusseklud </h3>
+                                <span> @_knitteriAm </span>
+                                <p>15DKR</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="project_item">
+                    <div class="project_item ">
                         <div class="project_single_img">
                             <img src="images/Rectangle_2_fz.png" alt="Project-images" class="w-100 img-fluid">
                             <div class="overlay_icon">
@@ -407,11 +401,11 @@
                                     <i class="flaticon-bookmark"></i>
                                 </div>
                             </div>
-                        </div>
-                        <div class="overlay-text">
-                            <h3> Musse Nusseklud </h3>
-                            <span> @_knitteriAm </span>
-                            <p>15DKR</p>
+                            <div class="overlay-text">
+                                <h3> Musse Nusseklud </h3>
+                                <span> @_knitteriAm </span>
+                                <p>15DKR</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -425,18 +419,18 @@
         <footer id="footer_section">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-5">
-                        <div class="copyright">
+                    <div class="col-lg-5 order-lg-1 order-3">
+                        <div class="copyright text-center text-lg-left">
                             <p>&copy;2021 KreaPlace. All Rights Reserved</p>
                         </div>
                     </div>
-                    <div class="col-lg-2 align-self-center h-100">
+                    <div class="col-lg-2 col-8 m-auto align-self-center h-100 order-lg-2 order-1">
                         <div class="footer_logo">
                             <img src="images/Kreaplace_bl1.png" alt="Logo" class="w-100 img-fluid">
                         </div>
                     </div>
-                    <div class="col-lg-5 align-self-center h-100">
-                        <div class="social_icon text-right">
+                    <div class="col-lg-5 align-self-center h-100 order-lg-3 order-2">
+                        <div class="social_icon text-center text-lg-right">
                             <a href="#"> <i class="fab fa-facebook-f" aria-hidden="true"></i></a>
                             <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
                             <a href="#"> <i class="fab fa-pinterest-p" aria-hidden="true"></i></a>
@@ -451,6 +445,7 @@
         <!-- jQuery first, bootstrap bundle -->
         <script src="js/jquery-1.12.4.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.mixitup.js"></script>
         <!-- plugin jquery start here -->
 
         <!-- plugin jquery end here -->
